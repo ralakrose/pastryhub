@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+}
+/*landing-page*/
+#landing-page {
+  background-image: url("/images/backround-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title-background {
+  background: #070707;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+/*nav-slider*/
+.nav-slider {
+  padding: 15px;
+  cursor: pointer;
+}
+.line {
+  background: #070707;
+  height: 3px;
+  margin: 5px;
+  width: 30px;
+}
+
+.line:nth-child(1) {
+  margin-top: 0;
+}
+/*nav-slider-section*/
+.nav-slider-section {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.close-nav-slider {
+  border: none;
+  outline: none;
+  float: right;
+  background: transparent;
+  color: #f1c40f;
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links-container li {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5em;
+}
+.openNav {
+  animation: openNav 0.5s forwards;
+}
+
+.closeNav {
+  animation: closeNav 0.5s forwards;
+}
+@keyframes openNav {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*Menu*/
+#menu {
+  background: #070707;
+}
+.menu-title {
+  color: whitesmoke;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+.menu-price {
+  float: right;
+}
+
+/*Restaurant information*/
+#restaurant-info {
+  background: #070707;
+  padding: 20px;
+}
+.restaurant-info-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.address-content,
+.business-hours,
+.contact-content {
+  padding: 10px;
+}
+
+.address,
+.hours,
+.phone {
+  font-size: 1em !important;
+  text-align: center;
+}
+
+.email {
+  margin-bottom: 0;
+  font-size: 1em !important;
+  text-align: center;
+}

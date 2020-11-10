@@ -4,14 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tabs.css" />
   </head>
   <body>
     <main>
       <section id="landing-page">
+        <div class="nav-slider">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
         <header class="title-background">
           <h2 class="title">Achayo's Kitchen</h2>
         </header>
       </section>
+
+      <section class="nav-slider-section">
+        <button class="close-nav-slider">X</button>
+        <section class="nav-links-container">
+          <ul>
+            <li><a class="nav-links" href="#menu">Menu</a></li>
+            <li>
+              <a class="nav-links" href="#restaurant-info">Restaurant Info</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="menu">
+        <h2 class="menu-title">Menu</h2>
+        <section class="tabs-container">
+          <section class="tabs">
+            <button class="tabHeader active-tab">Drinks</button>
+            <button class="tabHeader">Main Meals</button>
+            <button class="tabHeader">Appetizers</button>
+            <button class="tabHeader">Desserts</button>
+          </section>
+
+          <section id="tabSection-1" class="tabSection show-tab">
+            <p>Soda<span class="menu-price">100/=</span></p>
+            <p>Smoothies<span class="menu-price">100/=</span></p>
+            <p>Shakes<span class="menu-price">100/=</span></p>
+            <p>Juice<span class="menu-price">100/=</span></p>
+          </section>
+          <section id="tabSection-2" class="tabSection hide-tab">
+            <p>Chapati+ beans<span class="menu-price">100/=</span></p>
+            <p>Ugali+Fish<span class="menu-price">100/=</span></p>
+            <p>Biriani<span class="menu-price">100/=</span></p>
+            <p>Pilau<span class="menu-price">100/=</span></p>
+          </section>
+          <section id="tabSection-3" class="tabSection hide-tab">
+            <p>Bruschetta<span class="menu-price">100/=</span></p>
+            <p>Guacamole<span class="menu-price">100/=</span></p>
+            <p>French Fries<span class="menu-price">100/=</span></p>
+            <p>Stuffed Mushrooms<span class="menu-price">100/=</span></p>
+          </section>
+          <section id="tabSection-4" class="tabSection hide-tab">
+            <p>Ice cream<span class="menu-price">100/=</span></p>
+            <p>Pies<span class="menu-price">100/=</span></p>
+            <p>Cheese cakes<span class="menu-price">100/=</span></p>
+            <p>Brownies<span class="menu-price">100/=</span></p>
+          </section>
+        </section>
+      </section>
+
+      <section id="restaurant-info">
+        <section class="address-content">
+          <h2 class="restaurant-info-title">Address</h2>
+          <p class="address">5678 Maryjane St</p>
+          <p class="address">Mavela</p>
+        </section>
+        <section class="business-hours">
+          <h2 class="restaurant-info-title">Business Hours</h2>
+          <p class="hours">Monday- Friday: 8am-9pm</p>
+          <p class="hours">Saturday & Sunday: 24Hrs</p>
+        </section>
+        <section class="contact-content">
+          <h2 class="restaurant-info-title">Contact Details</h2>
+          <p class="phone">Call us: 070-124-3125</p>
+          <p class="email">ralakrose@gmail.com</p>
+        </section>
+      </section>
     </main>
+    <script src="main.js"></script>
+    <script src="tabs.js"></script>
   </body>
 </html>

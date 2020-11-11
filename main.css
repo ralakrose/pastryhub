@@ -5,6 +5,9 @@ body {
 h2 {
   margin: 0;
 }
+ul {
+  list-style: none;
+}
 /*landing-page*/
 #landing-page {
   background-image: url("/images/backround-img.jpg");
@@ -60,6 +63,7 @@ h2 {
   color: #f1c40f;
   font-size: 1.5em;
   padding: 15px;
+  cursor: pointer;
 }
 
 .nav-links-container {
@@ -123,11 +127,15 @@ p {
 /*Restaurant information*/
 #restaurant-info {
   background: #070707;
-  padding: 20px;
 }
 .restaurant-info-title {
   color: whitesmoke;
   text-align: center;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .address-content,
@@ -147,4 +155,18 @@ p {
   margin-bottom: 0;
   font-size: 1em !important;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address-content,
+  .business-hours {
+    border-right: 1px solid whitesmoke;
+    padding: 30px;
+  }
+  .contact-content {
+    padding: 30px;
+  }
 }

@@ -10,7 +10,7 @@ ul {
 }
 /*landing-page*/
 #landing-page {
-  background-image: url("/images/backround-img.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

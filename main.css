@@ -10,14 +10,15 @@ ul {
 }
 /*landing-page*/
 #landing-page {
-  background-image: url("images/background.jpg");
+  background-image: url("images/cupcakes.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 .title-background {
-  background: #070707;
+  background: #2e1c28;
   width: fit-content;
   margin: auto;
   padding: 10px;
@@ -25,7 +26,7 @@ ul {
 
 .title {
   text-align: center;
-  color: whitesmoke;
+  color: #fffbe3;
   font-size: 2em;
 }
 
@@ -35,7 +36,7 @@ ul {
   cursor: pointer;
 }
 .line {
-  background: #070707;
+  background: #2e1c28;
   height: 3px;
   margin: 5px;
   width: 30px;
@@ -46,7 +47,7 @@ ul {
 }
 /*nav-slider-section*/
 .nav-slider-section {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(46, 28, 40, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +61,7 @@ ul {
   outline: none;
   float: right;
   background: transparent;
-  color: #f1c40f;
+  color: #fffbe3;
   font-size: 1.5em;
   padding: 15px;
   cursor: pointer;
@@ -80,7 +81,7 @@ ul {
 
 .nav-links {
   text-decoration: none;
-  color: #eee;
+  color: #fffbe3;
   font-size: 1.5em;
 }
 .openNav {
@@ -106,10 +107,10 @@ ul {
 }
 /*Menu*/
 #menu {
-  background: #070707;
+  background: #2e1c28;
 }
 .menu-title {
-  color: whitesmoke;
+  color: #fffbe3;
   text-align: center;
   padding: 25px;
   font-size: 1.5em;
@@ -117,7 +118,7 @@ ul {
 
 p {
   font-size: 1.1em;
-  color: whitesmoke;
+  color: #fffbe3;
 }
 
 .menu-price {
@@ -126,10 +127,10 @@ p {
 
 /*Restaurant information*/
 #restaurant-info {
-  background: #070707;
+  background: #2e1c28;
 }
 .restaurant-info-title {
-  color: whitesmoke;
+  color: #fffbe3;
   text-align: center;
 }
 
@@ -163,7 +164,7 @@ p {
   }
   .address-content,
   .business-hours {
-    border-right: 1px solid whitesmoke;
+    border-right: 1px solid #fffbe3;
     padding: 30px;
   }
   .contact-content {

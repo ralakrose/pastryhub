@@ -106,7 +106,8 @@ ul {
   }
 }
 /*Menu*/
-#menu {
+#menu,
+#order {
   background: #2e1c28;
 }
 .menu-title {

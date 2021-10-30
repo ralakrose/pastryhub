@@ -14,14 +14,10 @@
 }
 
 .active-tab {
-  border: 1px solid whitesmoke !important;
-  border-bottom: none !important;
+  color: #2e1c28;
+  background-color: #fffbe3;
 }
 
-.tabSection {
-  border: 1px solid whitesmoke;
-  padding: 15px;
-}
 .hide-tab {
   display: none;
 }

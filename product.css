@@ -127,11 +127,11 @@
   background-color: #200918;
   color: #f0ecda;
 }
+.label {
+  font-size: clamp(0.4em, 1.1vw, 1.1em);
+}
 @media screen and (min-width: 768px) {
   .products-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-.label {
-  font-size: clamp(0.4em, 1.1vw, 1.1em);
 }

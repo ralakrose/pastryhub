@@ -22,6 +22,7 @@
         <header class="title-background">
           <h2 class="title">Achy's Pastry Hub</h2>
         </header>
+        
       </section>
 
       <!--Nav Menu-->
@@ -29,8 +30,8 @@
         <button class="close-nav-slider">X</button>
         <section class="nav-links-container">
           <ul>
-            
-              <a class="nav-links" href="#order">Menu</a>
+            <li>            
+               <a class="nav-links" href="#order">Menu</a>
             </li>
             <li>
               <a class="nav-links" href="#restaurant-info">Contact Details</a>
@@ -79,6 +80,7 @@
       
         <!--Make an Order-->
         <section id="order">
+          <h2 class="menu-title">Menu</h2>
       <section class="tabs">
         <button class="tabHeader btncupcakes" data-tab="1">Cupcakes</button>
         <button class="tabHeader btncakes" data-tab="2">Cakes</utton>
@@ -89,12 +91,12 @@
             <!--Red velvet cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg" >
+                <img src="images/rvcupcake.jpg" >
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1> Red Velvet Cupcakes</h1>
-                  <p><span class="price">KSh 500</span></p>
+                  <h1> Red Velvet Cupcakes </h1>
+                  <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -105,12 +107,12 @@
             <!--Vanilla cupcakes-->
              <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/vcupcakes.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Vanilla Cupcakes</h1>
-                  <p><span class="price">KSh 500</span></p>
+                  <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -121,12 +123,12 @@
             <!--Chocolate Cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/chococupcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Chocolate Cupcakes</h1>
-                  <p><span class="price">KSh 500</span></p>
+                  <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -137,12 +139,12 @@
             <!--Banana Cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/bananacupcakes.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Banana Cupcakes</h1>
-                  <p><span class="price">KSh 500</span></p>
+                  <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -155,12 +157,12 @@
             <!--Red Velvet Cake-->
             <div class="wrapper ">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/rvcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Red Velvet Cake</h1>
-                  <p><span class="price">KSh 1600</span></p>
+                  <p><span class="price">KSh 1600<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -171,12 +173,12 @@
             <!--Vanilla Cake-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/vcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Vanilla Cake</h1>
-                  <p><span class="price">KSh 1500</span></p>
+                  <p><span class="price">KSh 1500<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -187,12 +189,12 @@
             <!--Black Forest Cake-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/bfcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>Black Forest Cake</h1>
-                  <p><span class="price">KSh 2000</span></p>
+                  <p><span class="price">KSh 2000<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -202,12 +204,12 @@
             <!--White Forest Cake-->
             <div class="wrapper ">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/wfcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
                   <h1>White Forest Cake</h1>
-                  <p><span class="price">KSh 2000</span></p>
+                  <p><span class="price">KSh 2000<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
                   <button onclick=addToCart() type="button" id="btn">Add to cart</button>
@@ -220,7 +222,7 @@
             <!--Cookies-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/cookies.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
@@ -235,7 +237,7 @@
             <!--Tea Scones-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/teascones.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
@@ -250,7 +252,7 @@
             <!--Banana Bread-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cupcakes.jpg">
+                <img src="images/bananabread.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">

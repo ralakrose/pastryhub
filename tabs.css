@@ -18,9 +18,6 @@
   background-color: #fffbe3;
 }
 
-.hide-tab {
-  display: none;
-}
-.show-tab {
-  display: block;
+.tabs {
+  padding: 15px;
 }

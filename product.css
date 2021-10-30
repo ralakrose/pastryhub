@@ -36,6 +36,7 @@
 .product-img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .product-info {
   float: left;
@@ -110,7 +111,7 @@
   margin-right: auto;
   box-sizing: border-box;
   border: transparent;
-  border-radius: 60px;
+  border-radius: 30px;
   font-family: "Raleway", sans-serif;
   font-size: clamp(0.4em, 1.1vw, 1.1em);
   font-weight: 500;
@@ -123,11 +124,14 @@
 }
 
 .product-price-btn button:hover {
-  background-color: #b4ab76;
-  color: #2e1c28;
+  background-color: #200918;
+  color: #f0ecda;
 }
 @media screen and (min-width: 768px) {
   .products-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+.label {
+  font-size: clamp(0.4em, 1.1vw, 1.1em);
 }

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #2e1c28;
 }
 h2 {
   margin: 0;
@@ -34,9 +35,12 @@ ul {
 .nav-slider {
   padding: 15px;
   cursor: pointer;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 .line {
-  background: #2e1c28;
+  background: #030002;
   height: 3px;
   margin: 5px;
   width: 30px;

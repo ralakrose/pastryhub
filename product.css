@@ -118,13 +118,13 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #fffbe3;
-  background-color: #2e1c28;
+  background-color: #200918;
   cursor: pointer;
   outline: none;
 }
 
 .product-price-btn button:hover {
-  background-color: #200918;
+  background-color: rgba(32, 9, 24, 0.8);
   color: #f0ecda;
 }
 .label {

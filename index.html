@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="tabs.css" />
     <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
     <main>
@@ -31,7 +32,10 @@
         <section class="nav-links-container">
           <ul>
             <li>            
-               <a class="nav-links" href="#order">Menu</a>
+               <a class="nav-links" href="#order">Achy's Pastries</a>
+            </li>
+            <li>
+              <a class="nav-links" href="#cart">Shopping Cart</a>
             </li>
             <li>
               <a class="nav-links" href="#restaurant-info">Contact Details</a>
@@ -40,47 +44,10 @@
         </section>
       </section>
 
-      <!--Pastry Menu-->
-      <!-- <section id="menu">
-        <h2 class="menu-title">Menu</h2>
-        <section class="tabs-container">
-          <section class="tabs">
-            <button class="tabHeader active-tab" data-tab="1">Cupcakes</button>
-            <button class="tabHeader" data-tab="2">Cakes</utton>
-            <button class="tabHeader" data-tab="4">More</button>
-          </section>
-
-          <section id="tabSection-1" class="tabSection show-tab">
-    
-            <p>Red Velvet <span class="menu-price">500/=</span></p>
-            <p>Vanilla <span class="menu-price">500/=</span></p>
-            <p>Chocolate <span class="menu-price">500/=</span></p>
-            <p>Banana <span class="menu-price">500/=</span></p>
-          
-          </section>
-          <section id="tabSection-2" class="tabSection hide-tab">
-            
-            <p>Red Velvet<span class="menu-price">1600/=</span></p>
-            <p>Vanilla <span class="menu-price">1500/=</span></p>
-            <p>Black Forest<span class="menu-price">2000/=</span></p>
-            <p>White Forest<span class="menu-price">2000/=</span></p>
-            
-          </section>          
-          <section id="tabSection-4" class="tabSection hide-tab">
-            
-            <p>Cookies<span class="menu-price">200/=</span></p>
-            <p>Tea Scones<span class="menu-price">100/=</span></p>
-            <p>Banana Bread<span class="menu-price">500/=</span></p>
-            <p>Brownies<span class="menu-price">100/=</span></p>
-          </section>
-        </section>
-      </section> -->
-
-      
-      
-        <!--Make an Order-->
+           
+        <!--Make an Order/Menu-->
         <section id="order">
-          <h2 class="menu-title">Menu</h2>
+          <h2 class="menu-title">Achy's Pastries</h2>
       <section class="tabs">
         <button class="tabHeader btncupcakes" data-tab="1">Cupcakes</button>
         <button class="tabHeader btncakes" data-tab="2">Cakes</utton>
@@ -91,15 +58,15 @@
             <!--Red velvet cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/rvcupcake.jpg" >
+                <img class="image" src="images/rvcupcake.jpg" >
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1> Red Velvet Cupcakes </h1>
+                  <h1 class="item-name"> Red Velvet Cupcakes </h1>
                   <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -107,15 +74,15 @@
             <!--Vanilla cupcakes-->
              <div class="wrapper">
               <div class="product-img">
-                <img src="images/vcupcakes.jpg">
+                <img class="image" src="images/vcupcakes.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Vanilla Cupcakes</h1>
+                  <h1 class="item-name">Vanilla Cupcakes</h1>
                   <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div> 
@@ -123,15 +90,15 @@
             <!--Chocolate Cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/chococupcake.jpg">
+                <img class="image" src="images/chococupcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Chocolate Cupcakes</h1>
+                  <h1 class="item-name">Chocolate Cupcakes</h1>
                   <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -139,15 +106,15 @@
             <!--Banana Cupcakes-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/bananacupcakes.jpg">
+                <img class="image" src="images/bananacupcakes.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Banana Cupcakes</h1>
+                  <h1 class="item-name">Banana Cupcakes</h1>
                   <p><span class="price">KSh 500<span class="label"><i>(6-pack)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -157,15 +124,15 @@
             <!--Red Velvet Cake-->
             <div class="wrapper ">
               <div class="product-img">
-                <img src="images/rvcake.jpg">
+                <img class="image" src="images/rvcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Red Velvet Cake</h1>
+                  <h1 class="item-name">Red Velvet Cake</h1>
                   <p><span class="price">KSh 1600<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -173,15 +140,15 @@
             <!--Vanilla Cake-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/vcake.jpg">
+                <img class="image" src="images/vcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Vanilla Cake</h1>
+                  <h1 class="item-name">Vanilla Cake</h1>
                   <p><span class="price">KSh 1500<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -189,30 +156,30 @@
             <!--Black Forest Cake-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/bfcake.jpg">
+                <img class="image" src="images/bfcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Black Forest Cake</h1>
+                  <h1 class="item-name">Black Forest Cake</h1>
                   <p><span class="price">KSh 2000<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
             <!--White Forest Cake-->
             <div class="wrapper ">
               <div class="product-img">
-                <img src="images/wfcake.jpg">
+                <img class="image" src="images/wfcake.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>White Forest Cake</h1>
+                  <h1 class="item-name">White Forest Cake</h1>
                   <p><span class="price">KSh 2000<span class="label"><i>(1kg)</i></span></span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -222,55 +189,72 @@
             <!--Cookies-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/cookies.jpg">
+                <img class="image" src="images/cookies.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Cookies</h1>
+                  <h1 class="item-name">Cookies</h1>
                   <p><span class="price">KSh 200</span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
             <!--Tea Scones-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/teascones.jpg">
+                <img class="image" src="images/teascones.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Tea Scones</h1>
+                  <h1 class="item-name">Tea Scones</h1>
                   <p><span class="price">KSh 200</span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
             <!--Banana Bread-->
             <div class="wrapper">
               <div class="product-img">
-                <img src="images/bananabread.jpg">
+                <img class="image" src="images/bananabread.jpg">
               </div>
               <div class="product-info">
                 <div class="product-text">
-                  <h1>Banana Bread</h1>
+                  <h1 class="item-name">Banana Bread</h1>
                   <p><span class="price">KSh 500</span></p>
                 </div>
                 <div class="product-price-btn">
-                  <button onclick=addToCart() type="button" id="btn">Add to cart</button>
+                  <button  type="button" class="btn-add" id="btn">Add to cart</button>
                 </div>
               </div>
             </div>
 
             
           </div>
-          
-        
-       
+                   
       </section>
+
+
+      <!--Shopping Cart-->
+      <section id="cart" class="container content-section">
+        <h2 class="menu-title">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">KSh 0</span>
+        </div>
+        <button class="btn-purchase" type="button">PURCHASE</button>
+      </section>
+
 
       <!--Contact Details-->
       <section id="restaurant-info">
@@ -295,6 +279,6 @@
     </main>
     <script src="main.js"></script>
     <script src="tabs.js"></script>
-    <script src="products.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

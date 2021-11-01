@@ -72,6 +72,7 @@ btnMore.classList.remove("active-tab");
 btnMore.addEventListener("click", e => {
   order.appendChild(tabSection4)
   btnCakes.classList.remove("active-tab");
+  btnCupcakes.classList.remove("active-tab");
  btnMore.classList.add("active-tab");
   tabSection2.remove();
   tabSection1.remove();

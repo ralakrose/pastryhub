@@ -5,6 +5,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+//Remove Cart item an update
 function ready() {
     let removeCartItemButtons = document.getElementsByClassName('btn-remove')
     for (let i = 0; i < removeCartItemButtons.length; i++) {
@@ -27,6 +28,7 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+//Purchase button
 function purchaseClicked() {
     alert('Thank you for your purchase')
     let cartItems = document.getElementsByClassName('cart-items')[0]
@@ -36,12 +38,14 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
+//Remove Item from Cart
 function removeCartItem(event) {
     let buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
 
+//Quantity of item
 function quantityChanged(event) {
     let input = event.target
     if (isNaN(input.value) || input.value <= 0) {
@@ -50,16 +54,17 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+//Add to Cart button clicked
 function addToCartClicked(event) {
     let button = event.target
     let shopItem = button.parentElement.parentElement
     let title = shopItem.getElementsByClassName('item-name')[0].innerText
     let price = shopItem.getElementsByClassName('price')[0].innerText
-    //let imageSrc = shopItem.getElementsByClassName('image')[0].src
     addItemToCart(title, price)
     updateCartTotal()
 }
 
+//displaying added item in the cart section
 function addItemToCart(title, price) {
     let cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
@@ -87,6 +92,7 @@ function addItemToCart(title, price) {
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
+//update the total price of items added to the cart
 function updateCartTotal() {
     let cartItemContainer = document.getElementsByClassName('cart-items')[0]
     let cartRows = cartItemContainer.getElementsByClassName('cart-row')

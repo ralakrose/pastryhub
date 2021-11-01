@@ -24,23 +24,43 @@ ul {
   margin: auto;
   padding: 10px;
 }
+.title-background2 {
+  background: #fffbe3;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
 
 .title {
   text-align: center;
   color: #fffbe3;
   font-size: 2em;
 }
+.title2 {
+  text-align: center;
+  color: #2e1c28;
+  font-size: 2em;
+}
 
 /*nav-slider*/
 .nav-slider {
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
+  position: sticky;
+  top: 0;
 }
 .line {
   background: #2e1c28;
   height: 3px;
   margin: 5px;
   width: 30px;
+}
+.line2 {
+  background: #fffbe3;
+  height: 3px;
+  margin: 5px;
+  width: 3px;
+  border-radius: 5px;
 }
 
 .line:nth-child(1) {

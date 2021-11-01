@@ -35,12 +35,9 @@ ul {
 .nav-slider {
   padding: 15px;
   cursor: pointer;
-  position: fixed;
-  top: 0;
-  z-index: 100;
 }
 .line {
-  background: #030002;
+  background: #2e1c28;
   height: 3px;
   margin: 5px;
   width: 30px;
